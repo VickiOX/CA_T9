@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+  }
+
+:root {
+/*primær farver*/
+    --deepblue: #054674;
+    --waterblue:#0a79ae;
+    --CAblue:#0094d6;
+    --lightblue:#e6f1f7;
+
+/*bagrunds farve*/
+    --white: #ffffff;
+
+/*accentfarver*/
+    --boldred:#d54141;
+    --lightred:#fbecec;
+
+/*suplerende farver*/
+    --darkgrey:#4a4a4a;
+    --beige:#f1f1ed;
+  }
+
