@@ -4,20 +4,28 @@
 
 :root {
 /*primær farver*/
-    --deepblue: #054674;
-    --waterblue:#0a79ae;
-    --CAblue:#0094d6;
-    --lightblue:#e6f1f7;
+    --primary-color:#0094d6;
+    --secondary-color:#0a79ae;
+    --tertiary-color: #054674;
+    --quaternary-color:#e6f1f7;
 
 /*bagrunds farve*/
-    --white: #ffffff;
+    --background-color: #ffffff;
 
 /*accentfarver*/
-    --boldred:#d54141;
-    --lightred:#fbecec;
+    --accent-color:#d54141;
+    --accent-color-light:#fbecec;
 
 /*suplerende farver*/
-    --darkgrey:#4a4a4a;
-    --beige:#f1f1ed;
+    --additional-color1:#4a4a4a;
+    --additional-color2:#f1f1ed;
   }
 
+.header{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.footer{
+    display: flex;
+}
