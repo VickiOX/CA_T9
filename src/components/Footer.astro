@@ -4,6 +4,109 @@ import "../css/style.css";
 
 
 <div class="footer">
+    <div class="container "> 
+        <p>Om CA</p>
+        <p>Kontakt</p>
+        <p>Nyheder</p>
+        <p>Nyhedsbrev</p>
+    </div>
 
+    <div class="container "> 
+        <p>Studiepartner</p>
+        <p>Instant feedback</p>
+        <p>Løntjek</p>
+    </div>
+
+    <div class="container ">
+        <p>Personsdatapolitik</p>
+        <p>Cookiepolitik</p>
+        <p>Tilgænghedserklæring</p>
+    </div>
+
+    <div class="container ">
+        <p>Telefon hverdag 8:30-15:00</p>
+        <p class="nummer">3314 9045</p>
+        <p>Send en besked</p>
+    </div>
 </div>
+    <div class="wrap"> 
+        <div class="grid_1-1-1-1-1-1 row">
+            <!--CA LOGO -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+             <!--Trustpilot -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+             <!--TikTok -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+             <!--Instagram -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+             <!--Facebook -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <!--LinkedIn -->
+            <img src="/img/CA-LOGO.svg" alt="Logo">
+        </div>
+   
+            <p class="copyright">@2023copyright</p>
+     
+    </div>
+
+
+
+<style>
+    .nummer{
+        font-size: 36px;
+        margin:-10px 0;
+    }
+    .container{
+        padding-bottom: 10px;
+        display: block;
+    }
+    .footer{
+        display: inline-block;
+        
+    }
+    img{
+        width: 60px;
+        padding: 8px 0;
+    }
+    .grid_1-1-1-1-1-1{
+        display: grid;
+        grid-template-rows: repeat(auto);
+    }
+    p{
+        cursor:pointer;
+        font-size: 22px;
+        margin:5px 0;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    img{
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1000px){
+
+    .footer{
+        display:flex;
+        gap:10%;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+       
+    .grid_1-1-1-1-1-1{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .wrapper{
+        display: grid;
+    }
+    .wrap{
+        
+    }
+}
+</style>
 

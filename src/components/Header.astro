@@ -3,36 +3,88 @@ import "../css/style.css";
 ---
 
 <div class="header">
-  
-    <img class="logo" src="" alt="">
-    <div class="menu">
-        <img  class="search" src="" alt="">
-        <div class="menuBar">
-            <p>Menu</p>
-            <img class="ikon" src="" alt="">
-        </div>
-        <div class="menuLeft">
-            <p class="language"></p>
-            <p class="signUp"></p>
-            <p class="recommendNewMember"></p>
-        </div>
-        <div class="login">
-            <p>Mit CA</p>
-            <img class="ikon" src="" alt="">
-        </div> 
-    </div>
-   
+<div class="logo">
+    <img src="/img/CA-LOGO.svg" alt="Logo">
+    <span>Your Career <br> Our Business</span>
+  </div>
+
+  <div class="nav-section">
+    <img  class="search icon" src="/img/searchbar_CA.svg" alt="">
+     <!--indsæt menu text her-->
+    <img  class="menuText icon" src="/img/menu_barCA.svg" alt="">
+
+    <img  class="menuBar icon" src="/img/menu_barCA.svg" alt="">
+    <img  class="language icon" src="/img/CA_EN.svg" alt="">
+    <button class="icon signUp">Sign Up</button>
+    <button class="icon recommed">Recommend</button>
+    <button class="icon login">Login</button>
 </div>
 
 <style>
-.language, .signUp, .recommendNewMember{
-    display:none;
+
+@media screen and (min-width: 1000px){
+    .menuText, .language,.signUp, .recommed{
+    display: flex;
 }
 
-@media screen and (min-width: 800px){
-    .language, .signUp, .recommendNewMember{
-    display: show;
-}
+}   
 
-}
-</style>
+    .login{
+        width: 100px;
+        height: 80px;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    height: 30px;
+      
+    }
+    .menuText, .language,.signUp, .recommed{
+        display: none;
+    }
+    .search, .menuBar, .language{
+        width:30px;
+    }
+    #eng{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .nav-section {
+        margin-top: 6px;
+        gap:15px;
+        padding-left:30px;
+        align-items: flex-end;
+      }
+
+  </style>
