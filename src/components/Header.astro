@@ -3,5 +3,36 @@ import "../css/style.css";
 ---
 
 <div class="header">
-
+  
+    <img class="logo" src="" alt="">
+    <div class="menu">
+        <img  class="search" src="" alt="">
+        <div class="menuBar">
+            <p>Menu</p>
+            <img class="ikon" src="" alt="">
+        </div>
+        <div class="menuLeft">
+            <p class="language"></p>
+            <p class="signUp"></p>
+            <p class="recommendNewMember"></p>
+        </div>
+        <div class="login">
+            <p>Mit CA</p>
+            <img class="ikon" src="" alt="">
+        </div> 
+    </div>
+   
 </div>
+
+<style>
+.language, .signUp, .recommendNewMember{
+    display:none;
+}
+
+@media screen and (min-width: 800px){
+    .language, .signUp, .recommendNewMember{
+    display: show;
+}
+
+}
+</style>

@@ -2,6 +2,7 @@
 import "../css/style.css";
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
+import Dropdown from "../components/Dropdown.astro"
 ---
 
 <html lang="en">
@@ -10,11 +11,16 @@ import Header from "../components/Header.astro"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>CA akasse T9</title>
 	</head>
 	<Header></Header>
 	<body>
-		<h1>hello</h1>
+		<h1>kampagne title</h1>
+		<video src="filnavn.mp4"> </video>
+		<h2>overskrift</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis non et, consequatur corporis autem ducimus eaque magni eius atque optio vero expedita veritatis aspernatur.</p>
+		<Dropdown></Dropdown>
+		<a href="https://www.ca.dk/formularer/indmeldelse-ca/" class="bilvMedlem"> Tilmeld her</a>
 	</body>
 	<Footer></Footer>
 </html>
