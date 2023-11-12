@@ -5,18 +5,18 @@ import "../css/style.css";
 <div class="header">
 <div class="logo">
     <img src="/img/CA-LOGO.svg" alt="Logo">
-    <span>Your Career <br> Our Business</span>
+    <span class=" hide_item">Your Career <br> Our Business</span>
   </div>
 
   <div class="nav-section">
     <img  class="search icon" src="/img/searchbar_CA.svg" alt="">
      <!--indsæt menu text her-->
-    <img  class="menuText icon" src="/img/menu_barCA.svg" alt="">
+    <img  class="menuText icon hide_item" src="/img/menu_barCA.svg" alt="">
 
-    <img  class="menuBar icon" src="/img/menu_barCA.svg" alt="">
-    <img  class="language icon" src="/img/CA_EN.svg" alt="">
-    <button class="icon signUp">Sign Up</button>
-    <button class="icon recommed">Recommend</button>
+    <img  class="menuBar icon " src="/img/menu_barCA.svg" alt="">
+    <img  class="language icon hide_item" src="/img/CA_EN.svg" alt="">
+    <button class="icon signUp hide_item">Sign Up</button>
+    <button class="icon recommed hide_item">Recommend</button>
     <button class="icon login">Login</button>
 </div>
 
@@ -26,7 +26,11 @@ import "../css/style.css";
   .nav-section {
       justify-content: flex-end;
     }
-    
+
+    .hide_item{
+        display: show;
+    }
+  
 }   
 
     .login{
@@ -40,10 +44,7 @@ import "../css/style.css";
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-    flex-direction: column;
-    align-items: flex-start;
-
+      flex-direction: column;
     }
 
     .logo {
@@ -70,7 +71,7 @@ import "../css/style.css";
     height: 30px;
       
     }
-    .menuText, .language,.signUp, .recommed{
+    .hide_item{
         display: none;
     }
     .search, .menuBar, .language{
@@ -84,7 +85,7 @@ import "../css/style.css";
         margin-top: 6px;
         gap:15px;
         padding-left:30px;
-        align-items: flex-end;
+        display: flex;
       }
 
   </style>
