@@ -1,0 +1,54 @@
+---
+import "../css/style.css";
+const {data} = Astro.props;
+---
+
+<section class="title_box">
+    <article class="title_bar">
+        <img src={data.image} alt={data.alt_tag}>
+        <h2>{data.title}</h2>
+    </article>
+    <img class="drop_down_icon" src="../../angle-double-small-down.svg" alt="">
+</section>
+<section class="drop_down_box">
+    <p>{data.text}</p>
+</section>
+
+
+<style>
+
+.title_bar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.title_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.title_box.active .drop_down_icon{
+    transform: rotate(0deg);
+}
+
+.drop_down_icon{
+    max-width: 12px;
+    align-self: center;
+    transform: rotate(-90deg);
+}
+
+.drop_down_box{
+    display: none;
+}
+
+.drop_down_box.active{
+    display: block;
+}
+
+</style>
+
+<script src="../js/script.js"></script>

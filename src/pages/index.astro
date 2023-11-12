@@ -1,8 +1,8 @@
 ---
 import "../css/style.css";
-import Footer from "../components/Footer.astro"
-import Header from "../components/Header.astro"
-import Dropdown from "../components/Dropdown.astro"
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Dropdown from "../components/Dropdown.astro";
 ---
 
 <html lang="en">
@@ -13,25 +13,26 @@ import Dropdown from "../components/Dropdown.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>CA akasse T9</title>
 	</head>
-	<Header></Header>
 	<body>
-		
-		<div class="grid_1-1"> 
-			<div> 
-				<h1>kampagne title</h1>
-				<video src="filnavn.mp4"> </video>
+		<Header></Header>
+		<main>
+			<div class="grid_1-1"> 
+				<div> 
+					<h1>Kampagne title</h1>
+					<video src="filnavn.mp4"> </video>
+				</div>
+			
+				<div> 
+					<h2>Overskrift</h2>
+					<p class="kampagne_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis non et, consequatur corporis autem ducimus eaque magni eius atque optio vero expedita veritatis aspernatur.</p>
+					<Dropdown></Dropdown>
+				</div>
 			</div>
-		
-			<div> 
-				<h2>overskrift</h2>
-				<p class="kampagne_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis non et, consequatur corporis autem ducimus eaque magni eius atque optio vero expedita veritatis aspernatur.</p>
-				<Dropdown></Dropdown>
-			</div>
-		</div>
 
-		<div class="box"><a href="https://www.ca.dk/formularer/indmeldelse-ca/" class="bilvMedlem"> Tilmeld her</a></div>
+			<div class="box"><a href="https://www.ca.dk/formularer/indmeldelse-ca/" class="bilvMedlem"> Tilmeld her</a></div>
+		</main>
+		<Footer></Footer>	
 	</body>
-	<Footer></Footer>
 </html>
 
 <style>
@@ -41,12 +42,14 @@ import Dropdown from "../components/Dropdown.astro"
 	a{
 		color:aliceblue;
 		text-align: center;
-		width: 200px;
+		width: 185px;
+		height: 60px;
 		display: inline-block;
 		background-color:red;
-		padding: 10px 6px;
-		align-items: center;
 		margin-bottom:40px;
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 16px 0px;
 	}
 
 	.box{

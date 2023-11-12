@@ -10,11 +10,9 @@ import "../css/style.css";
 
   <div class="nav-section">
     <img  class="search icon" src="/img/searchbar_CA.svg" alt="">
-     <!--indsæt menu text her-->
-    <img  class="menuText icon hide_item" src="/img/menu_barCA.svg" alt="">
-
+    <p class="nav_bar_tekst hide_item">MENU</p>
     <img  class="menuBar icon " src="/img/menu_barCA.svg" alt="">
-    <img  class="language icon hide_item" src="/img/CA_EN.svg" alt="">
+    <p class="nav_bar_tekst hide_item">EN</p>
     <button class="icon signUp hide_item">Sign Up</button>
     <button class="icon recommed hide_item">Recommend</button>
     <button class="icon login">Login</button>
@@ -22,18 +20,6 @@ import "../css/style.css";
 </div>
 
 <style>
-
-@media screen and (min-width: 1000px){
-  .nav-section {
-      justify-content: flex-end;
-    }
-
-    .hide_item{
-       display: block;
-    }
-  
-}   
-
     .login{
         width: 100px;
         height: 200px;
@@ -92,5 +78,14 @@ import "../css/style.css";
         justify-content: space-between;
       }
 
-      
+   @media screen and (min-width: 1000px){
+  .nav-section {
+      justify-content: flex-end;
+    }
+
+    .hide_item{
+       display: block;
+    }
+  
+}      
   </style>
