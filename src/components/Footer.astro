@@ -2,7 +2,7 @@
 import "../css/style.css";
 ---
 
-
+<div class="wrapper"> 
 <div class="footer">
     <div class="container "> 
         <p>Om CA</p>
@@ -32,26 +32,45 @@ import "../css/style.css";
     <div class="wrap"> 
         <div class="grid_1-1-1-1-1-1 row">
             <!--CA LOGO -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <div class="logo icons">
+                <img src="/img/CA-LOGO.svg" alt="Logo">
+                <span class=" hide_item">Your Career <br> Our Business</span>
+            </div>
              <!--Trustpilot -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <img class="icons" id="trustpilot" src="/img/trustpilot_ca.svg" alt="Logo">
              <!--TikTok -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <img class="icons" src="/img/tiktok_ca.svg" alt="Logo">
              <!--Instagram -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <img class="icons" src="/img/instagram_ca.svg" alt="Logo">
              <!--Facebook -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <img class="icons" src="/img/Facebook_ca.svg" alt="Logo">
             <!--LinkedIn -->
-            <img src="/img/CA-LOGO.svg" alt="Logo">
+            <img class="icons" src="/img/linedIn_ca.svg" alt="Logo">
         </div>
    
             <p class="copyright">@2023copyright</p>
      
     </div>
-
+</div>
 
 
 <style>
+    .icons{
+        justify-content: space-between;
+        gap:10px;
+    }
+    .logo{
+        display: flex;
+        justify-content: inline-block;
+    }
+    .wrapper{
+        background-color: var( --tertiary-color);
+        margin:-10px;
+        padding-left:20px;
+        padding-top: 20px;
+        color: var(--additional-color2);
+        display: flex;
+    }
     .nummer{
         font-size: 36px;
         margin:-10px 0;
@@ -62,11 +81,16 @@ import "../css/style.css";
     }
     .footer{
         display: inline-block;
-        
+    
     }
     img{
-        width: 60px;
+        width: 50px;
         padding: 8px 0;
+        cursor: pointer;
+        
+    }
+    #trustpilot{
+        width:230px;
     }
     .grid_1-1-1-1-1-1{
         display: grid;
@@ -80,15 +104,14 @@ import "../css/style.css";
     .copyright{
         font-size: 14px;
     }
-    img{
-        cursor: pointer;
-    }
+   
 
     @media screen and (min-width: 1000px){
 
     .footer{
         display:flex;
         gap:10%;
+     
     }
     .container{
         display: flex;
@@ -96,17 +119,20 @@ import "../css/style.css";
         flex-wrap: nowrap;
         flex-flow: column wrap;
         justify-content: flex-start;
+  
     }
        
     .grid_1-1-1-1-1-1{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      
     }
+
     .wrapper{
-        display: grid;
+        position: absolute;
+        bottom:0;
     }
-    .wrap{
-        
-    }
+
+
 }
 </style>
 
