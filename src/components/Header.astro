@@ -3,7 +3,7 @@ import "../css/style.css";
 ---
 
 <div class="header">
-<div class="logo">
+  <div class="logo">
     <img src="/img/CA-LOGO.svg" alt="Logo">
     <span class=" hide_item">Your Career <br> Our Business</span>
   </div>
@@ -18,6 +18,7 @@ import "../css/style.css";
     <button class="icon signUp hide_item">Sign Up</button>
     <button class="icon recommed hide_item">Recommend</button>
     <button class="icon login">Login</button>
+  </div>
 </div>
 
 <style>
@@ -28,23 +29,27 @@ import "../css/style.css";
     }
 
     .hide_item{
-        display: show;
+       display: block;
     }
   
 }   
 
     .login{
         width: 100px;
-        height: 80px;
+        height: 200px;
+        border: none;
+        background-color: var(--tertiary-color);
+        color:white;
+
     }
-    header {
-      background-color: #333;
+    .header {
+      background-color: #ededed;
       color: #fff;
       padding: 10px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
+      flex-direction: row;
+      margin:-10px;
     }
 
     .logo {
@@ -84,8 +89,8 @@ import "../css/style.css";
     .nav-section {
         margin-top: 6px;
         gap:15px;
-        padding-left:30px;
-        display: flex;
+        justify-content: space-between;
       }
 
+      
   </style>
