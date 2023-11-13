@@ -1,37 +1,44 @@
-
-*{
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
 :root {
-/*primær farver*/
-    --primary-color:#0094d6;
-    --secondary-color:#0a79ae;
-    --tertiary-color: #054674;
-    --quaternary-color:#e6f1f7;
+  /*primær farver*/
+  --primary-color: #0094d6;
+  --secondary-color: #0a79ae;
+  --tertiary-color: #054674;
+  --quaternary-color: #e6f1f7;
 
-/*bagrunds farve*/
-    --background-color: #ffffff;
+  /*bagrunds farve*/
+  --background-color: #ffffff;
 
-/*accentfarver*/
-    --accent-color:#d54141;
-    --accent-color-light:#fbecec;
+  /*accentfarver*/
+  --accent-color: #d54141;
+  --accent-color-light: #fbecec;
 
-/*suplerende farver*/
-    --additional-color1:#4a4a4a;
-    --additional-color2:#f1f1ed;
-  }
-
-.header{
-    display: flex;
-    grid-template-columns: repeat(auto-fill, 100px);
+  /*suplerende farver*/
+  --additional-color1: #4a4a4a;
+  --additional-color2: #f1f1ed;
 }
 
-.footer{
-    display: flex;
+.header {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, 100px);
 }
 
-h1, h2, .kampagne_info, a{
-    text-align: center;
+.footer {
+  display: flex;
 }
 
+h1,
+h2,
+.kampagne_info,
+a {
+  text-align: center;
+}
+
+main {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}

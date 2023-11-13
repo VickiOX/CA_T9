@@ -16,9 +16,9 @@ import Dropdown from "../components/Dropdown.astro";
 	<body>
 		<Header></Header>
 		<main>
+			<h1>Har du også brug for hjælp?	</h1>
 			<div class="grid_1-1"> 
 				<div> 
-					<h1>Har du også brug for hjælp?	</h1>
 					<video src="filnavn.mp4"> </video>
 				</div>
 			
@@ -60,11 +60,16 @@ import Dropdown from "../components/Dropdown.astro";
 		display: flex;
 	}
 
+	.kampagne_info{
+		max-width: 600px;
+	}
+
 
 	@media screen and (min-width: 1000px){
 		.grid_1-1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		justify-items: center;
 
 	}
 

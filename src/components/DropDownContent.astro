@@ -3,52 +3,39 @@ import "../css/style.css";
 const {data} = Astro.props;
 ---
 
-<section class="title_box">
-    <article class="title_bar">
-        <img src={data.image} alt={data.alt_tag}>
-        <h2>{data.title}</h2>
-    </article>
-    <img class="drop_down_icon" src="../../angle-double-small-down.svg" alt="">
+<section class="dropdownmenu">
+    <details>
+        <summary><div class="flex_drop"><h3>{data.title}</h3><img src={data.image} alt={data.alt_tag}></div></summary>
+        <p>{data.text}</p>
+    </details>
 </section>
-<section class="drop_down_box">
-    <p>{data.text}</p>
-</section>
-
 
 <style>
 
-.title_bar{
+.dropdownmenu{
     display: flex;
-    gap: 20px;
-    align-items: center;
-    
+    justify-content: center;
 }
-
-.title_box{
+.flex_drop{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+    justify-content: space-between
 }
 
-.title_box.active .drop_down_icon{
-    transform: rotate(0deg);
+details summary {
+  width: 500px;
+  background-color: var(--additional-color2);
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px 0px 25px;
+  color: black;
 }
 
-.drop_down_icon{
-    max-width: 12px;
-    align-self: center;
-    transform: rotate(-90deg);
-}
-
-.drop_down_box{
-    display: none;
-}
-
-.drop_down_box.active{
-    display: block;
+details p {
+    background-color: var(--additional-color2);
+  width: 500px;
+  margin: 0;
+  padding: 0px 25px 15px 25px;
+  color: black;
 }
 
 </style>
-
-<script src="../js/script.js"></script>
