@@ -37,8 +37,44 @@ a {
   text-align: center;
 }
 
+h1 {
+  font-size: 50px;
+  color: var(--tertiary-color);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--tertiary-color);
+}
+
+p {
+  font-size: 16px;
+}
+
+body main {
+  background-color: var(--background-color);
+}
+
 main {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: var(--additional-color2);
+  }
+
+  main {
+    margin-left: 10%;
+    background-color: var(--background-color);
+  }
 }

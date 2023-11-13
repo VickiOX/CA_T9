@@ -12,6 +12,7 @@ const data = await fetch("https://budndpaqiarxjitvfnfc.supabase.co/rest/v1/drop_
 ---
 
       <section class="drop_down_title_bar">
+        <h3 class="kampagne_info">Se dine fordele her:</h3>
         {data.map(title=>{
             return <DropDownContent data={title}/>
         })}
