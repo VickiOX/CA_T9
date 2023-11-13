@@ -35,7 +35,3 @@ h1, h2, .kampagne_info, a{
     text-align: center;
 }
 
-.grid_1-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
