@@ -13,24 +13,49 @@ import "../css/style.css";
     <p class="nav_bar_tekst hide_item">MENU</p>
     <img  class="menuBar icon " src="/img/menu_barCA.svg" alt="">
     <p class="nav_bar_tekst hide_item">EN</p>
-    <button class="icon signUp hide_item">Sign Up</button>
-    <button class="icon recommed hide_item">Recommend</button>
-    <button class="icon login">Login</button>
+
+    <div class=" signUp hide_item">
+      <p> Sign Up</p>
+    </div>
+
+    <div class=" recommed hide_item">
+      <p>Recommend </p>
+    </div>
+
+    <div class=" grid_1-1 login">
+      <div>
+        <img src="/img/MitCA_ca_hvid.svg" alt="">
+      </div>
+     <div>
+      <p>Mit CA </p> 
+    </div>
+    </div>
   </div>
 </div>
 
 <style>
     .login{
-        width: 100px;
-        height: 200px;
-        border: none;
-        background-color: var(--tertiary-color);
-        color:white;
+      width: 120px;
+      border: none;
+      background-color: var(--tertiary-color);
+      color:white;
+      margin-right: 10px;
+      cursor: pointer;
+      margin-bottom: 8px;
+      height: 70px;
+      margin:-11px -7px -3px 0px;
+      padding-top: 12px;
+    }
 
+    img{
+      height: 30px;
+      margin: auto;
+      display: block;
+      margin-top: 10px;
     }
     .header {
       background-color: var(--additional-color2);
-      color: #fff;
+      
       padding: 10px;
       display: flex;
       justify-content: space-between;
@@ -62,6 +87,10 @@ import "../css/style.css";
     height: 30px;
       
     }
+
+    .nav_bar_tekst{
+      cursor:pointer;
+    }
     .hide_item{
         display: none;
     }
@@ -77,6 +106,14 @@ import "../css/style.css";
         gap:15px;
         justify-content: space-between;
       }
+
+      .recommed, .signUp{
+        cursor:pointer;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        padding:0 8px;
+      }
+
 
    @media screen and (min-width: 1000px){
   .nav-section {
