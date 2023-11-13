@@ -1,0 +1,40 @@
+---
+import "../css/style.css";
+---
+
+<article class="social_media">
+    <!--TikTok -->
+    <img class="icons" src="/img/tiktok_ca.svg" alt="Logo">
+    <!--Instagram -->
+    <img class="icons" src="/img/instagram_ca.svg" alt="Logo">
+    <!--Facebook -->
+    <img class="icons" src="/img/Facebook_ca.svg" alt="Logo">
+    <!--LinkedIn -->
+    <img class="icons" src="/img/linedIn_ca.svg" alt="Logo">
+</article>
+
+<style>
+
+    .social_media{
+        display: flex;
+        gap: 10px;
+    }
+
+     img{
+        width: 50px;
+        padding: 8px 0;
+        cursor: pointer;
+        
+    }
+
+    @media screen and (min-width: 1000px){
+
+        .social_media{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+}
+    
+</style>
