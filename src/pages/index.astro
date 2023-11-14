@@ -18,8 +18,8 @@ import Dropdown from "../components/Dropdown.astro";
 		<main>
 			<h1>Har du også brug for hjælp?	</h1>
 			<div class="grid_1-1"> 
-				<div> 
-					<video src="filnavn.mp4"> </video>
+				<div class="flex_i_grid"> 
+					<img src="../../public/video_template_picture.webp" alt="">
 				</div>
 			
 				<div class="flex_i_grid"> 
@@ -38,6 +38,10 @@ import Dropdown from "../components/Dropdown.astro";
 
 <style>
 
+	img{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 	
 	.blivMedlem{
 		padding:20px 40px;
@@ -79,7 +83,7 @@ import Dropdown from "../components/Dropdown.astro";
 	}
 
 	.kampagne_info{
-		max-width: 550px;
+		max-width: 400px;
 	}
 
 
@@ -88,6 +92,14 @@ import Dropdown from "../components/Dropdown.astro";
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
+	}
+
+	img{
+		width: 205%;
+	}
+
+	.kampagne_info{
+		max-width: 550px;
 	}
 
 }   
