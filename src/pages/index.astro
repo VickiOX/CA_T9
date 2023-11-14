@@ -23,9 +23,9 @@ import Dropdown from "../components/Dropdown.astro";
 				</div>
 			
 				<div class="flex_i_grid"> 
-					<h2>CA - din fremtidige studiepartner</h2>
-					<p class="kampagne_info">CA a-kasse har en masse fordele for dig der studerer, og ser en fremtid inden for business eller ønske om at arbejde selvstændigt. Mange tror at en a-kasse først er nødvendig, den dag du skal ud og søge arbejde, men som medlem af CA a-kasse får du som studerende en masse tilbud og fordele du kan benytte i studietiden, samt hjælp til når du en dag skal ud på arbejdsmarkedet</p>
-					<p class="kampagne_info bitbigger">Din karriere starter på studiet.</p>
+					<h2>CA - dit fremtidige sikkerhedsnet</h2>
+					<p class="kampagne_info">CA a-kasse har en masse fordele for dig der studerer, og ser en fremtid inden for business eller ønske om at arbejde selvstændigt. Mange tror at en a-kasse først er nødvendig, den dag du skal ud og søge arbejde, men som medlem af CA a-kasse får du som studerende en masse tilbud og fordele du kan benytte i studietiden, samt hjælp til når du en dag skal ud på arbejdsmarkedet.</p>
+					<p class="kampagne_info bitbigger">CA - dit sikkerhedsnet</p>
 					<Dropdown></Dropdown>
 				</div>
 			</div>
@@ -50,9 +50,8 @@ import Dropdown from "../components/Dropdown.astro";
 	}
 
 	.bitbigger{
-		font-size: 20px;
+		font-size: 25px;
 		color: var(--secondary-color);
-		text-decoration: underline;
 	}
 	a{
 		color: white;
@@ -69,7 +68,9 @@ import Dropdown from "../components/Dropdown.astro";
 	}
 
 	a:hover{
-		border: 3px solid #910000;
+		border: 4px solid var(--accent-color);
+		color: var(--accent-color);
+		background-color: white;
 	}
 
 	.box{
