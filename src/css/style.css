@@ -40,23 +40,28 @@ a {
 h1 {
   font-size: 50px;
   color: var(--tertiary-color);
+  font-family: "Nexa bold";
 }
 
 h2 {
   font-size: 30px;
+  font-family: "Nexa regular";
 }
 
 h3 {
   font-size: 25px;
+  font-family: "Nexa regular";
 }
 
 h4 {
   font-size: 20px;
   color: var(--tertiary-color);
+  font-family: "Nexa regular";
 }
 
 p {
   font-size: 16px;
+  font-family: "Nexa light";
 }
 
 body main {
@@ -66,6 +71,21 @@ body main {
 main {
   padding-top: 40px;
   padding-bottom: 20px;
+}
+
+@font-face {
+  font-family: "Nexa regular";
+  src: url("../../public/Fonts/nexa_regular.otf");
+}
+
+@font-face {
+  font-family: "Nexa bold";
+  src: url("../../public/Fonts/nexa_bold.otf");
+}
+
+@font-face {
+  font-family: "Nexa light";
+  src: url("../../public/Fonts/nexa_light.otf");
 }
 
 @media screen and (min-width: 1000px) {
